@@ -31,7 +31,7 @@ public class test_groups {
 			// directoryDAOImp.addGroup(new Group("M2 GL"));
 
 			System.out.println("----Update Group -----");
-			Group groupObj = groupDAOImp.findOneGroup(3);
+			Group groupObj = groupDAOImp.findOneGroup(2);
 			groupObj.setName("SIR");
 			groupDAOImp.updateGroup(groupObj, groupObj.getIdGroup());
 			groupDAOImp.deleteGroup(3);

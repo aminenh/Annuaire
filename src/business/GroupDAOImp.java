@@ -83,7 +83,7 @@ public class GroupDAOImp implements IGroupDAO {
 
 	@Override
 	public void updateGroup(Group group, long idGroup) throws SQLException {
-		this.jdbcTemplate.update("UPDATE groups SET name='" + group.getName() + "' WHERE IDgroup = " + idGroup + " ");
+		this.jdbcTemplate.update("UPDATE groups SET name='" + group.getName() + "' WHERE IDgroup = " + idGroup + "");
 	}
 
 	@Override
